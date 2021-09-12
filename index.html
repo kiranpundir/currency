@@ -1,0 +1,98 @@
+<html>
+    <head>
+<style>
+    body{
+        background-color: rgb(241, 202, 93);
+    }
+    h1{
+        text-align: center;
+        padding-top: 40px;
+        font-family: cursive;
+    }
+   .form input{
+       width:150px;
+       height:50px;
+       
+   }
+   .form{
+       margin-left: 30%;
+   }
+   .form2 input{
+       width:150px;
+       height:50px;
+      
+
+       
+   }
+   .form2{
+       margin-left: 30%;
+   }
+        
+   .btn{
+    margin-left: 30%;
+   }
+   button{
+        
+    width:150px;
+        height:40px;
+      
+        margin-top: 5px;
+        border-radius: 10px;
+        background-color: black;
+        color:white;
+        margin-bottom: 10px;
+    }
+  
+    .main{
+        margin-top: 14%;
+        background-color: rgb(216, 141, 79);
+        width: 700px;
+        height:350px;
+        margin-left: 25%;
+        box-shadow: 5px 8px 10px black;
+    }
+    
+    select{
+        width:150px;
+        height:50px;
+        text-align: center;
+    }
+</style>
+    </head>
+    <body>
+        <div class="main">
+          <h1>Plz enter the dollar amount you'd like to convert in rupees.</h1>
+          <div class="form">
+            <input id="Ed" type="number" placeholder="Enter amount in $">
+            <input id="Er" type="number" placeholder="Enter amount in rupees">
+           </div>
+           <div class="btn">
+           <button onclick="calculate()">Change in rupees</button>
+          <button onclick="calculate2()">Change in dollar</button>
+        </div>
+          <div class="form2">
+            <input id="Gr" type="number" placeholder="Get amount in rupees">
+            <input id="Gd" type="number" placeholder="Get amount in dollar">
+           </div>
+         </div>
+        
+           <script>
+        const calculate=()=>{
+           const fv=document.getElementById('Ed').value;
+           let formula=fv*74;
+           document.getElementById('Gr').value=formula;
+        }
+        const calculate2=()=>{
+            const fv=document.getElementById('Er').value;
+              let formula = fv*0.013 ;
+              document.getElementById('Gd').value=formula;
+        }
+
+  
+
+    
+  
+        </script>
+    </body>
+    
+</html>
